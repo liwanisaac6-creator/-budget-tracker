@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #1f4e78;
+    color: white;
+    padding: 30px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.add-expense-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense-section h2,
+.expenses-section h2,
+.video-section h2 {
+    color: #1f4e78;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-expense-section > form {
+    width: 100%;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #1f4e78;
+}
+
+input:not([type="submit"]) {
+    background-color: #fafafa;
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #1f4e78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163a5a;
+}
+
+.expenses-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.expenses-section td,
+.expenses-section th {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.expenses-section thead {
+    background-color: #1f4e78;
+    color: white;
+}
+
+.expenses-section tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.expenses-section tbody tr:hover {
+    background-color: #dceaf7;
+}
+
+.expenses-section tbody tr:first-child {
+    font-weight: bold;
+}
+
+.instructions {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+summary {
+    font-weight: bold;
+    color: #1f4e78;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+details p {
+    line-height: 1.6;
+}
+
+.video-section {
+    background-color: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-section iframe {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #1f4e78;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .expenses-section {
+        overflow-x: auto;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
